@@ -5,6 +5,21 @@
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+}
+
+.mb {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .mb {
+    display: block;
+  }
+}
+
 nav {
   padding: 10px 50px;
   display: flex;
@@ -81,6 +96,11 @@ nav .icon a img:hover {
   width: 1200px;
   margin: 0 auto;
 }
+@media screen and (max-width: 768px) {
+  .pd_box {
+    width: 100%;
+  }
+}
 .pd_box .pd_name {
   font-size: 24px;
   font-weight: bold;
@@ -91,8 +111,23 @@ nav .icon a img:hover {
   gap: 10px;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 414px) {
+  .pd_box .pd_list {
+    padding: 0 10px;
+  }
+}
 .pd_box .pd_list .card {
   width: 32%;
+}
+@media screen and (max-width: 768px) {
+  .pd_box .pd_list .card {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 414px) {
+  .pd_box .pd_list .card {
+    width: 100%;
+  }
 }
 .pd_box .pd_list .card img {
   width: 100%;
@@ -106,4 +141,28 @@ nav .icon a img:hover {
   font-weight: bold;
   font-size: 20px;
   margin-left: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .slick-next {
+    right: 25px;
+  }
+  .slick-prev {
+    left: 25px;
+    z-index: 10;
+  }
+}
+@media screen and (max-width: 768px) {
+  .imgPC {
+    display: none !important;
+  }
+}
+
+.imgMB {
+  display: none !important;
+}
+@media screen and (max-width: 768px) {
+  .imgMB {
+    display: block !important;
+  }
 }/*# sourceMappingURL=style.css.map */

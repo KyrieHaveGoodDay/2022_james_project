@@ -7,6 +7,17 @@
 }
 
 $mainFont: "Anton", sans-serif;
+.pc {
+    @media screen and(max-width:768px) {
+        display: none;
+    }
+}
+.mb {
+    display: none;
+    @media screen and(max-width:768px) {
+        display: block;
+    }
+}
 
 nav {
     padding: 10px 50px;
@@ -97,6 +108,9 @@ nav {
 .pd_box {
     width: 1200px;
     margin: 0 auto;
+    @media screen and(max-width:768px) {
+        width: 100%;
+    }
     .pd_name {
         font-size: 24px;
         font-weight: bold;
@@ -107,8 +121,17 @@ nav {
         gap: 10px;
         // 超過寬度就往下掉
         flex-wrap: wrap;
+        @media screen and(max-width:414px) {
+            padding: 0 10px;
+        }
         .card {
             width: 32%;
+            @media screen and(max-width:768px) {
+                width: 49%;
+            }
+            @media screen and(max-width:414px) {
+                width: 100%;
+            }
             img {
                 width: 100%;
             }
@@ -125,5 +148,28 @@ nav {
                 }
             }
         }
+    }
+}
+
+// slick-arrow slick-prev slick-next
+@media screen and(max-width:768px) {
+    .slick-next {
+        right: 25px;
+    }
+    .slick-prev {
+        left: 25px;
+        z-index: 10;
+    }
+}
+
+.imgPC {
+    @media screen and(max-width:768px) {
+        display: none !important;
+    }
+}
+.imgMB {
+    display: none !important;
+    @media screen and(max-width:768px) {
+        display: block !important;
     }
 }

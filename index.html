@@ -16,6 +16,7 @@
 
     <style>
 
+
     </style>
 </head>
 
@@ -39,9 +40,12 @@
 
     <!-- 輪播 -->
     <div class="slick">
-        <img src="./img/slick1.jpeg" alt="">
-        <img src="./img/slick2.avif" alt="">
-        <img src="./img/slick3.avif" alt="">
+        <img class="imgPC" src="./img/slick1.jpeg" alt="">
+        <img class="imgPC" src="./img/slick2.avif" alt="">
+
+        <img class="imgMB" src="./img/imgMb1.jpeg" alt="">
+        <img class="imgMB" src="./img/imgMb2.jpeg" alt="">
+
     </div>
     <!--關於我 -->
     <div class="about">
@@ -114,8 +118,8 @@
         AOS.init();
         // 啟動輪播
         $('.slick').slick({
-            autoplay: true,
-            autoplaySpeed: 1000
+            // autoplay: true,
+            // autoplaySpeed: 1000
         });
     </script>
 </body>
