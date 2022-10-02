@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <nav data-aos="fade-down" data-aos-duration="1000">
+        <a href="" class="title">Kyrie</a>
+        <p>作品集</p>
+        <div class="icon">
+            <a href="">
+                <img src="./img/github.png" alt="">
+            </a>
+            <a href="">
+                <img src="./img/fb.png" alt="">
+            </a>
+            <a href="">
+                <img src="./img/line.png" alt="">
+            </a>
+        </div>
+    </nav>
+
+    <!-- 輪播 -->
+    <div class="slick">
+        <img src="./img/slick1.jpeg" alt="">
+        <img src="./img/slick2.avif" alt="">
+        <img src="./img/slick3.avif" alt="">
+    </div>
+    <!--關於我 -->
+    <div class="about">
+        <p class="a_title">關於我</p>
+        <h1 data-aos="zoom-in-down" data-aos-duration="3000" data-aos-mirror="true">Kyrie</h1>
+        <p class="p_content" data-aos="fade-right" data-aos-duration="3000">我是一位網頁設計師，專門客製化設計</p>
+        <a href="">關於我</a>
+
+    </div>
+    <!-- 作品 -->
+    <div class="product">
+        <div class="pd_box">
+            <p class="pd_name">作品集</p>
+            <div class="pd_list">
+                <!-- 6個卡片 -->
+                <div class="card" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="0">
+                    <img src="./img/pd1.jpeg" alt="">
+                    <div class="card_data">
+                        <span class="card_smtitle">類型-戶外</span>
+                        <span class="card_title">風景1</span>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="300">
+                    <img src="./img/pd2.jpeg" alt="">
+                    <div class="card_data">
+                        <span class="card_smtitle">類型-戶外</span>
+                        <span class="card_title">風景1</span>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="500">
+                    <img src="./img/pd3.jpeg" alt="">
+                    <div class="card_data">
+                        <span class="card_smtitle">類型-戶外</span>
+                        <span class="card_title">風景1</span>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="700">
+                    <img src="./img/pd4.jpeg" alt="">
+                    <div class="card_data">
+                        <span class="card_smtitle">類型-戶外</span>
+                        <span class="card_title">風景1</span>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="900">
+                    <img src="./img/pd5.jpeg" alt="">
+                    <div class="card_data">
+                        <span class="card_smtitle">類型-戶外</span>
+                        <span class="card_title">風景1</span>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="1100">
+                    <img src="./img/pd6.jpg" alt="">
+                    <div class="card_data">
+                        <span class="card_smtitle">類型-戶外</span>
+                        <span class="card_title">風景1</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- CDN -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./all.js"></script>
+    <script>
+        // 啟動AOS
+        AOS.init();
+        // 啟動輪播
+        $('.slick').slick({
+            autoplay: true,
+            autoplaySpeed: 1000
+        });
+    </script>
+</body>
+
+</html>
